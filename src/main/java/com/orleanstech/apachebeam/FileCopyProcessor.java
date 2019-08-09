@@ -8,6 +8,9 @@ import org.apache.beam.sdk.transforms.ParDo;
 
 import java.io.Serializable;
 
+/**
+ * Copy processor for beam
+ */
 public class FileCopyProcessor implements Serializable {
 
     public void runPipeline(String[] args) {
