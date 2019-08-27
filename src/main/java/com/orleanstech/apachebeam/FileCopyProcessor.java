@@ -41,7 +41,8 @@ public class FileCopyProcessor implements Serializable {
                     @ProcessElement
                     public void processElement(ProcessContext processContext) {
                         KV<String, Iterable<String>> element = processContext.element();
-                        long count = StreamSupport.stream(element.getValue().spliterator(), false)
+                        long count = StreamSupport
+                                .stream(element.getValue().spliterator(), false)
                                 .filter(s -> s.contains("Carte_Bancaire"))
                                 .count();
                         processContext.output(element.getKey() + " : " + count);
