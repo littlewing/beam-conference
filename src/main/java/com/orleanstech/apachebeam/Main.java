@@ -1,4 +1,4 @@
-package com.orleanstech;
+package com.orleanstech.apachebeam;
 
 public class Main {
     public static void main(String[] args) {
