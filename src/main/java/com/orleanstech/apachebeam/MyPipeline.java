@@ -12,8 +12,13 @@ public class MyPipeline implements Serializable {
 
     public void run(String[] args) {
         Pipeline pipeline = Pipeline.create(PipelineOptionsFactory.fromArgs(args).withValidation().create());
+        // read CSV from directory
         pipeline.apply(TextIO.read().from("data/*.csv"))
+                // remove 'Résident'
+                // get Count of each parking meter
+                // write to target folder
                 .apply(TextIO.write().to("target/orleanstech"));
+
         pipeline.run();
     }
 }
