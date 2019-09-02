@@ -15,6 +15,8 @@ public class MyPipeline implements Serializable {
         // read CSV from directory
         pipeline.apply(TextIO.read().from("data/*.csv"))
                 // remove 'Résident'
+                // transform to key value
+                // group by key
                 // get Count of each parking meter
                 // write to target folder
                 .apply(TextIO.write().to("target/orleanstech"));
