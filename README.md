@@ -7,10 +7,10 @@ mvn archetype:generate \                                                        
       -DarchetypeGroupId=org.apache.beam \
       -DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
       -DarchetypeVersion=2.14.0 \
-      -DgroupId=com.orleanstech.apachebeam \
+      -DgroupId=com.com.orleanstech.apachebeam \
       -DartifactId=apache-beam-sample \
       -Dversion="0.1" \
-      -Dpackage=com.orleanstech.apachebeam \
+      -Dpackage=com.com.orleanstech.apachebeam \
       -DinteractiveMode=false
 ``` 
 
@@ -19,10 +19,10 @@ mvn archetype:generate \                                                        
 ### Avec le direct runner 
 
  ```jshelllanguage
- mvn compile exec:java -Dexec.mainClass=com.orleanstech.apachebeam.Main    -Dexec.args="--runner=DirectRunner" -Pdirect-runner
+ mvn compile exec:java -Dexec.mainClass=com.com.orleanstech.apachebeam.Main    -Dexec.args="--runner=DirectRunner" -Pdirect-runner
 ```
 ### Avec flink en mode local 
  
  ```jshelllanguage
- mvn compile exec:java -Dexec.mainClass=com.orleanstech.apachebeam.Main    -Dexec.args="--runner=FlinkRunner" -Pflink-runner
+ mvn compile exec:java -Dexec.mainClass=com.com.orleanstech.apachebeam.Main    -Dexec.args="--runner=FlinkRunner" -Pflink-runner
 ```
