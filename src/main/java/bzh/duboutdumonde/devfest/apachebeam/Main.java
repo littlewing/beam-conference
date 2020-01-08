@@ -1,4 +1,4 @@
-package com.orleanstech.apachebeam;
+package bzh.duboutdumonde.devfest.apachebeam;
 
 public class Main {
     public static void main(String[] args) {
