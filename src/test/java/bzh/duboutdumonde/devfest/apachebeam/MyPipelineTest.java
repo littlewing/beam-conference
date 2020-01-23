@@ -1,10 +1,10 @@
-package com.orleanstech.apachebeam;
+package bzh.duboutdumonde.devfest.apachebeam;
 
 
 import org.junit.Before;
 import org.junit.Test;
 
-class MyPipelineTest {
+public class MyPipelineTest {
 
 
     @Before
