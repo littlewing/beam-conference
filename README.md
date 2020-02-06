@@ -26,3 +26,10 @@ mvn archetype:generate \                                                        
  ```jshelllanguage
  mvn compile exec:java -Dexec.mainClass=bzh.duboutdumonde.devfest.apachebeam.Main    -Dexec.args="--runner=FlinkRunner" -Pflink-runner
 ```
+### Avec spark en mode local 
+ 
+ ```jshelllanguage
+ mvn compile exec:java -Dexec.mainClass=bzh.duboutdumonde.devfest.apachebeam.Main    -Dexec.args="--runner=SparkRunner" -Pspark-runner
+```
+
+
